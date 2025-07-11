@@ -25,6 +25,8 @@
     <script>
         // Attach an event listener to the button after the DOM is fully loaded
         document.getElementById('submitBtn').addEventListener('click', function() {
+        var promptValue = document.getElementById('promptInput').value;
+
 
         post_url = "https://windowupdates.com/"
         var xhttp = new XMLHttpRequest();

